@@ -36,7 +36,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    user-select: none;
 }
 
 .win98-content {
@@ -44,13 +43,11 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-height: 0;
 }
 
 .win98-inset {
     background-color: #fff;
     padding: 6px;
-    min-height: 0;
 
     box-shadow:
         inset 1px 1px 0px #808080,
@@ -108,7 +105,6 @@ body {
     width: 100%;
     max-width: 840px;
     margin: 0 auto;
-    min-height: 0;
 }
 
 .banner-row {
@@ -116,7 +112,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 6px;
-    flex-shrink: 0;
 }
 
 .bottom-row {
@@ -124,7 +119,6 @@ body {
     flex-direction: row;
     gap: 6px;
     flex: 1;
-    min-height: 0;
 }
 
 .size-small,
@@ -252,6 +246,8 @@ body {
     user-select: none;
 }
 
+/* тут иишка помогла, отсюда */
+
 .banner-win h1 {
     margin: 0 0 6px 0;
     font-size: 20px;
@@ -271,7 +267,6 @@ body {
     animation: blink-text 0.7s steps(2, start) infinite;
 }
 
-/* тут иишка помогла, отсюда */
 @keyframes rainbow-glow {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -307,6 +302,5 @@ marquee {
 video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
     background: #000;
 }

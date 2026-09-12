@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<div class="win98-window" style="flex-shrink: 0; margin-bottom: 6px;">
+<header class="win98-window" style="margin-bottom: 6px;">
     <div class="win98-titlebar">
         <span>helo</span>
     </div>
@@ -15,9 +15,9 @@
     <marquee behavior="alternate" scrollamount="4">
         🔥 [ВНИМАНИЕ] КУРС ПО 1С ОТ НУЛЯ ДО ГУРУ 99% СКИДКА 🔥
     </marquee>
-</div>
+</header>
 
-<div class="win98-main">
+<main class="win98-main">
     <div class="banner-row">
         <div class="win98-window size-small">
             <div class="win98-inset" style="flex: 1; font-size: 12px;">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="bottom-row">
-        <div class="win98-window column-sidebar">
+        <aside class="win98-window column-sidebar">
             <div class="win98-titlebar">
                 <span>Chat / Comments</span>
             </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </aside>
 
         <div class="win98-window column-content">
             <div class="win98-titlebar">
@@ -81,21 +81,21 @@
 
                 <div class="blog-posts-container">
 
-                    <div class="win98-inset blog-post">
+                    <article class="win98-inset blog-post">
                         <div class="post-meta">
                             <span class="post-title">lorem ipsum</span>
                             <span>date: 00.00.0000 | time: 00:00</span>
                         </div>
                         <div>lorem ipsum</div>
-                    </div>
+                    </article>
 
-                    <div class="win98-inset blog-post">
+                    <article class="win98-inset blog-post">
                         <div class="post-meta">
                             <span class="post-title">lorem ipsum</span>
                             <span>date: 00.00.0000 | time: 00:00</span>
                         </div>
                         <div>lorem ipsum</div>
-                    </div>
+                    </article>
 
                 </div>
 
@@ -103,19 +103,19 @@
         </div>
 
     </div>
-</div>
+</main>
 
-<div class="win98-window" style="flex-shrink: 0; margin-top: 6px;">
+<footer class="win98-window" style="margin-top: 6px;">
     <div class="win98-content">это не менее крутой футер</div>
     <div class="win98-titlebar" style="height: 4px; padding: 0;"></div>
-</div>
+</footer>
 
 <script>
     function startRickroll() {
         document.getElementById('rickrollWindow').style.display = 'flex';
         document.getElementById('winBanner').style.display = 'none';
         document.getElementById('playerPlace').innerHTML = `
-            <video id="myLocalVideo" autoplay controls>
+            <video autoplay>
                 <source src="src/vid/chto.mp4" type="video/mp4">
             </video>
         `;
