@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEIN BLOG</title>
+    <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="win98-window" style="margin-bottom: 6px;">
+    <div class="win98-titlebar">
+        <span>helo</span>
+    </div>
+    <div class="win98-content">это оч крутой хэдер</div>
+    <marquee behavior="alternate" scrollamount="4">
+        🔥 [ВНИМАНИЕ] КУРС ПО 1С ОТ НУЛЯ ДО ГУРУ 99% СКИДКА 🔥
+    </marquee>
+</header>
+
+<main class="win98-main">
+    <div class="banner-row">
+        <div class="win98-window size-small">
+            <div class="win98-inset" style="flex: 1; font-size: 12px;">
+                <a>網上虛擬 交心不宜</a>
+                <br>
+                <a>Don't Trust people in the Cyber World</a>
+            </div>
+        </div>
+
+        <div class="win98-window size-large">
+            <div class="win98-content banner-picture"></div>
+        </div>
+    </div>
+
+    <div class="bottom-row">
+        <aside class="win98-window column-sidebar">
+            <div class="win98-titlebar">
+                <span>Chat / Comments</span>
+            </div>
+            <div class="win98-content">
+                <div class="chat-container">
+                    <div class="win98-inset chat-messages">
+                        <div class="chat-msg">
+                            <span class="chat-time">[00:00]</span> <span class="chat-user">guest:</span> guest_text
+                        </div>
+                        <div class="chat-msg">
+                            <span class="chat-time">[00:00]</span> <span class="chat-user admin">owner:</span> admin_text
+                        </div>
+                    </div>
+                    <div class="chat-input-row">
+                        <input type="text" class="win98-input" placeholder="Введите текст...">
+                        <button class="win98-button">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="win98-window column-content">
+            <div class="win98-titlebar">
+                <span>Blog</span>
+            </div>
+            <div class="win98-content">
+                <div class="blog-info-container">
+                    <div class="win98-inset banner-win" id="winBanner" onclick="startRickroll()">
+                        <h1>🔥🔥🔥 YOU WON 1000$$$!!! 🔥🔥🔥</h1>
+                        <p>👉 КЛИКНИ СЮДА СКОРЕЕ, ЧТОБЫ ЗАБРАТЬ СВОЙ КУШ!!! 👈</p>
+                    </div>
+
+                    <div class="win98-window wmp-window" id="rickrollWindow">
+                        <div class="win98-titlebar">
+                            <span>WMP</span>
+                            <button class="win98-button" style="padding: 0 4px; font-weight: bold; min-width: 18px;" onclick="closeRickroll()">X</button>
+                        </div>
+                        <div class="win98-content" style="padding: 4px;">
+                            <div class="win98-inset video-wrapper">
+                                <div id="playerPlace"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-posts-container">
+
+                    <article class="win98-inset blog-post">
+                        <div class="post-meta">
+                            <span class="post-title">lorem ipsum</span>
+                            <span>date: 00.00.0000 | time: 00:00</span>
+                        </div>
+                        <div>lorem ipsum</div>
+                    </article>
+
+                    <article class="win98-inset blog-post">
+                        <div class="post-meta">
+                            <span class="post-title">lorem ipsum</span>
+                            <span>date: 00.00.0000 | time: 00:00</span>
+                        </div>
+                        <div>lorem ipsum</div>
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="win98-window" style="margin-top: 6px;">
+    <div class="win98-content">это не менее крутой футер</div>
+    <div class="win98-titlebar" style="height: 4px; padding: 0;"></div>
+</footer>
+
+<script>
+    function startRickroll() {
+        document.getElementById('rickrollWindow').style.display = 'flex';
+        document.getElementById('winBanner').style.display = 'none';
+        document.getElementById('playerPlace').innerHTML = `
+            <video autoplay>
+                <source src="src/vid/chto.mp4" type="video/mp4">
+            </video>
+        `;
+    }
+
+    function closeRickroll() {
+        document.getElementById('rickrollWindow').style.display = 'none';
+        document.getElementById('winBanner').style.display = 'block';
+        document.getElementById('playerPlace').innerHTML = '';
+    }
+</script>
+</body>
+</html>
